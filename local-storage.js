@@ -1,6 +1,6 @@
 // Function to cache the actual content of index.html
 function cacheHTMLFromIndex() {
-    fetch('schoolsnice/index.html')
+    fetch('index.html')
         .then(response => response.text())
         .then(htmlContent => {
             if (typeof(Storage) !== "undefined") {
